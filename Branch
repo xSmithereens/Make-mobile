@@ -1,0 +1,20 @@
+public class Branch {
+	double length;
+	double weight;
+	double torque;
+	
+	public Branch(double n, double m){
+		length = n;
+		weight = m;
+	}
+	public double length(double n){
+		return length;
+	}
+	public double torque(Branch n){
+		torque = length*weight;
+		return torque;
+		
+	}
+	
+
+}
