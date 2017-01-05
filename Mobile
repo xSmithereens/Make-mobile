@@ -1,0 +1,17 @@
+public class Mobile {
+	Branch leftBranch;
+	Branch rightBranch;
+	
+	
+	public Mobile(Branch n, Branch m){
+		leftBranch = n;
+		rightBranch = m;
+	}
+	public Branch leftBranch(){
+		return leftBranch;
+	}
+	public Branch rightBranch(){
+		return rightBranch;
+	}
+
+}
