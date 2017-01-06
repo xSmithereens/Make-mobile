@@ -1,6 +1,0 @@
-public class Structure {
-	double weight;
-	public void Weight(double n){
-		weight = n;
-	}
-}
