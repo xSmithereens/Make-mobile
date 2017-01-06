@@ -1,19 +1,37 @@
+
 public class Branch {
 	double length;
 	double weight;
 	double torque;
+	boolean leaf;
+	Mobile m;
 	
 	public Branch(double n, double m){
 		length = n;
 		weight = m;
+		leaf = true;
 	}
-	public double length(double n){
+	public Branch(double i, Mobile n){
+		length = i;
+		m = n;
+		leaf = false;
+	}
+	public double length(){
 		return length;
 	}
-	public double torque(Branch n){
-		torque = length*weight;
+	public double weight(){
+		return weight;
+	}
+	public double torque(){
+		torque = length * weight;
 		return torque;
 		
+	}
+	public boolean weightOrMobile(){
+		return leaf;
+	}
+	public Mobile mobile(){
+		return m;
 	}
 	
 
