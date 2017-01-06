@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		 * Classes
+		 * Branch
+		 * Structure
+		 * Weight
+		 * Length
+		 */
+		/*
+		 * Torque
+		 * Total weight
+		 * Balanced
+		 * 
+		 * Obect.instanceof(<class>);
+		 */
+
+	}
+
+}
