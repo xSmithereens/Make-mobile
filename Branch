@@ -23,7 +23,12 @@ public class Branch {
 		return weight;
 	}
 	public double torque(){
-		torque = length * weight;
+		if (leaf){
+			torque = length * weight;
+		}
+		else{
+			torque = length * m.totalWeight();
+		}
 		return torque;
 		
 	}
