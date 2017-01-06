@@ -1,7 +1,9 @@
+
 public class Mobile {
 	Branch leftBranch;
 	Branch rightBranch;
-	
+	double torque;
+	double tw = 0;
 	
 	public Mobile(Branch n, Branch m){
 		leftBranch = n;
@@ -12,6 +14,32 @@ public class Mobile {
 	}
 	public Branch rightBranch(){
 		return rightBranch;
+	}
+	public boolean balanced(){
+		if (leftBranch.torque() == rightBranch.torque())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	public double totalWeight(){
+		if (leftBranch.weightOrMobile()){
+			tw += leftBranch.weight();
+		}
+		else {
+			leftBranch.mobile().totalWeight();
+		}
+		if(rightBranch.weightOrMobile()){
+			tw += rightBranch.weight();
+		}
+		else{
+			rightBranch.mobile().totalWeight();
+		}
+		return tw;
 	}
 
 }
